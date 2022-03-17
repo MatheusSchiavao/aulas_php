@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styleCapL.css" media="screen" />
+  <title>Livraria GuTheus</title>
+</head>
+<link rel="shortcut icon" href="assets/image/livro1.png" type="image/x-icon">
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="titulo">
+        <h2>Cadastrar livro </h2>
+        <form name="cadastrar_livro" method="post" action="inserir_livro.php">
+      </div>
+      <br>
+      <name="cadastrar_livro" method="post" action="inserir_livro.php">
+        <div class="Descricao">
+          Descrição: <input name="c_descricao" type="text" size="50" maxlength=50 required><br>
+          Quantidade: <input name="c_quantidade" type="text" size="50" maxlength=5 required><br>
+          Autor: <input name="c_autor" type="text" size="50" maxlength=50 required><br></p>
+        </div>
+        <br>
+        <div class="tipo_capa">
+          Tipo de capa:<br>
+          <input type="radio" name="tipo_capa" value="normal">Capa normal<br>
+          <input type="radio" name="tipo_capa" value="dura">Capa dura<br>
+        </div>
+        <br>
+        <div class="categoria">
+          <label>Categoria:</label> <br>
+          <select name="categoria_livro" class="sel" required>
+            <option value="" selected>Selecione</option>
+            <option value="Romance">Romance</option>
+            <option value="Ação">Ação</option>
+            <option value="Comédia">Comédia</option>
+            <option value="Ficção">Ficção</option>
+            <option value="Aventura">Aventura</option>
+          </select><br></p>
+        </div>
+        <div class="termo">
+          <input type="checkbox" name="c_termo" value="sim" required> Aceita os termos? </p>
+          </div>
+          <br>
+          <div class="data">
+            Selecione a data de retirada:<input type="date" name="data_retirada"></p>
+          </div>
+          <br>
+           <p class="create"><a href="form_excluir_livro.html">Clique para excluir um livro</a></p>
+          <input class="button" type=submit value=Enviar>
+    </div>
+  </div>
+  </div>
+</form>
+</body>
+
+</html>
